@@ -29,9 +29,10 @@ submitData.addEventListener("click", function(e){
 
     var radioCh = document.getElementsByName("gender").forEach(radio =>{
         if (radio.checked){
-            console.log(radio.value)
+            console.log(radio.value);
         }
     });
+    console.log("This is it!!!!"+radioCh);
 
     cc = parseInt(cc);
     yy = parseInt(yy);
@@ -43,4 +44,24 @@ submitData.addEventListener("click", function(e){
     dayOfTheWeek = parseInt(dayOfTheWeek);
     console.log((dayOfTheWeek));
 
+
+
+    if(radioCh==male && dayOfTheWeek==0){
+        console.log("Your Akan name is Kwasi");
+    }else if(radioCh==male && dayOfTheWeek==1){
+        console.log("YourAkanName is Kwodwo");
+    }else if(radioCh==male && dayOfTheWeek==2){
+        console.log("YourAkanName is Kwabena");
+    }else if(radioCh==male && dayOfTheWeek==3){
+        console.log("YourAkanName is Kwaku");
+    }else if(radioCh==male && dayOfTheWeek==4){
+        console.log("YourAkanName is yaw");
+    }else if(radioCh==male && dayOfTheWeek==5){
+        console.log("YourAkanName is Kofi");
+    }else if(radioCh==male && dayOfTheWeek==6){
+        console.log("YourAkanName is Kwame");
+    }else{
+        console.log("Invalid target name");
+    }
+    
 });
