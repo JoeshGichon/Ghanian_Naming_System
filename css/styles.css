@@ -1,3 +1,4 @@
+
 nav{
     background-color: rgb(192, 187, 187);
 }
@@ -20,4 +21,39 @@ nav ul{
 li{
     list-style: none;
 }
-
+.centering{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form-display{
+    border: 2px solid grey;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("https://images.pexels.com/photos/5112013/pexels-photo-5112013.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    color: crimson;
+    font-size: 1.6rem;
+}
+#form>div:nth-child(1) input{
+    display: inline-block;
+}
+#day,#month{
+    width: 4rem;
+}
+#year{
+    width: 8rem;
+}
+#sec-3{
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 50%;
+}
+#name-display{
+    text-transform: capitalize;
+    text-align: center;
+}

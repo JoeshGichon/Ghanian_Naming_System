@@ -22,26 +22,41 @@
                 </ul>
             </nav>
         </section>
-        <script src="./js/main.js"></script>
-        <section class="container">
-            <form action="" method="">
-                <div class="mb-3">
-                  <label for="dateOfBirth" class="form-label">Date Of Birth</label>
-                  <input type="date" class="form-control" id="dateOfBirth" required>
-                </div>
+        
+        <section class="container centering" id="sec-2">
+            <div id="form-display">
+                <form action="index.html" method="GET" id="form">
+                    <div class="mb-3 row">
+                      <label for="dateOfBirth" class="form-label">Date Of Birth</label>
+                      <input type="text" name="day" class="form-control" id="day" value="" placeholder="DD" required>
+                      <input type="text" name="month" class="form-control" id="month" value="" placeholder="MM" required>
+                      <input type="text" name="year" class="form-control" id="year" value="" placeholder="YYYY" required>
+                    </div>
 
-                <div class="mb-3 form-check">
-                    <label class="form-check-label" for="exampleCheck1" aria-required="true">Male</label>
-                    <input type="radio" class="form-check-input" id="male" value="gender" name="gender" required>
-                </div>
-
-                <div class="mb-3 form-check">
-                    <label class="form-check-label" for="exampleCheck1">Female</label>
-                    <input type="radio" class="form-check-input" id="female" value="gender" name="gender" required>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+                    <label for="">Gender</label>
+                    <div class="mb-3 form-check">
+                        <label class="form-check-label" for="exampleCheck1" aria-required="true">Male</label>
+                        <input type="radio" name="gender" class="form-check-input"  id="male" value="male" required>
+                    </div>
+    
+                    <div class="mb-3 form-check">
+                        <label class="form-check-label" for="exampleCheck1" >Female</label>
+                        <input type="radio" name="gender" class="form-check-input" id="female" value="female"  required>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary" value="submit" name="submit" id="submit">Submit</button>
+                  </form>
+            </div>
         </section>
+
+        <section class="container centering" id="sec-3">
+            <div id="name-display" class="row">
+                <h1>Your Ghanian,</h1>
+                <h2>First Name is:</h2>
+                <h3>Yawe</h3>
+            </div>
+        </section>
+
+        <script src="./js/main.js"></script>
     </body>
 </html>
