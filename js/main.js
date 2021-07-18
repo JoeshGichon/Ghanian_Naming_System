@@ -60,8 +60,21 @@ submitData.addEventListener("click", function(e){
         console.log("YourAkanName is Kofi");
     }else if(radioCh==male && dayOfTheWeek==6){
         console.log("YourAkanName is Kwame");
+    }else if(radioCh==female && dayOfTheWeek==0){
+        console.log("Your Akan name is Akwoso");
+    }else if(radioCh==female && dayOfTheWeek==1){
+        console.log("YourAkanName is adwoa");
+    }else if(radioCh==female && dayOfTheWeek==2){
+        console.log("YourAkanName is Abenaa");
+    }else if(radioCh==female && dayOfTheWeek==3){
+        console.log("YourAkanName is Akua");
+    }else if(radioCh==female && dayOfTheWeek==4){
+        console.log("YourAkanName is yaw");
+    }else if(radioCh==female && dayOfTheWeek==5){
+        console.log("YourAkanName is Afua");
+    }else if(radioCh==female && dayOfTheWeek==6){
+        console.log("YourAkanName is Ama");
     }else{
-        console.log("Invalid target name");
+        console.log("Invalid target name for name");
     }
-    
 });
