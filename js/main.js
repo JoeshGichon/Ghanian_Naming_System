@@ -25,7 +25,7 @@ submitData.addEventListener("click", function(e){
         alert("Invalid month");
     };
 
-    
+
 
     var radioCh = document.getElementsByName("gender").forEach(radio =>{
         if (radio.checked){
@@ -33,9 +33,14 @@ submitData.addEventListener("click", function(e){
         }
     });
 
+    cc = parseInt(cc);
+    yy = parseInt(yy);
+    month = parseInt(month);
+    day = parseInt(day);
 
-
+    //  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
+    var dayOfTheWeek =  ( ( ((cc)/4) -2*(cc)-1) + ((5*(yy)/4) ) + ((26*(month+1)/10)) + (day) ) % 7;
+    dayOfTheWeek = parseInt(dayOfTheWeek);
+    console.log((dayOfTheWeek));
 
 });
-
-
