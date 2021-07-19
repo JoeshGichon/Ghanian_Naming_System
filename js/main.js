@@ -2,6 +2,8 @@ let inputMonth = document.getElementById("month");
 let inputDay = document.getElementById("day");
 let inputYear = document.getElementById("year");
 const submitData = document.getElementById("submit");
+let akanName = document.getElementById("akanName");
+console.log(akanName);
 
 
 
@@ -75,6 +77,7 @@ submitData.addEventListener("click", function(e){
     }else if(radioCh==female && dayOfTheWeek==6){
         console.log("YourAkanName is Ama");
     }else{
-        console.log("Invalid target name for name");
+        // console.log("Invalid target name for name");
+        akanName.innerHTML = "Invalid Name";
     }
 });
