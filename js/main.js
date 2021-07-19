@@ -1,3 +1,5 @@
+// getting my html elements and assining them to variables
+
 let inputMonth = document.getElementById("month");
 let inputDay = document.getElementById("day");
 let inputYear = document.getElementById("year");
@@ -5,8 +7,14 @@ const submitData = document.getElementById("submit");
 let akanName = document.getElementById("akanName");
 
 
+// Creating my submit event which takes a call back function
+
 submitData.addEventListener("click", function(e){
+    // Preventing the default submit event
+
     e.preventDefault();
+
+    // Creating variables that stores values
     var month = inputMonth.value;
     var day = inputDay.value;
     var year = inputYear.value;
@@ -15,11 +23,11 @@ submitData.addEventListener("click", function(e){
     console.log(month);
     console.log(year);
 
-    
+    // Creating century(cc) variableas well as year(yy) variable that splits the Year string variable into 2 parts, cc and yy
     var yy = year.slice(0,2);
     var cc = year.slice(2,5);
     
-
+    // validating the day as well as the month variables to ensure its correct
     if(month<0 && month>12 && day<0 && day>31){
         alert("Invalid month");
     };
@@ -32,14 +40,18 @@ submitData.addEventListener("click", function(e){
     //     }
     // });
 
+    // creating radioCh variable that stores value that is checked on the input gender radio button
     var radioCh = document.querySelector("input[name='gender']:checked").value;
 
     console.log(radioCh);
 
+    // Converting string variables to number data type and the variables will be input for the day formulae
     cc = parseInt(cc);
     yy = parseInt(yy);
     month = parseInt(month);
     day = parseInt(day);
+
+    // creating the day variable that calculates the day of the week
 
     //  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
     var dayOfTheWeek =  ( ( ((cc)/4) -2*(cc)-1) + ((5*(yy)/4) ) + ((26*(month+1)/10)) + (day) ) % 7;
@@ -47,7 +59,7 @@ submitData.addEventListener("click", function(e){
     console.log((dayOfTheWeek));
 
 
-
+    // Assinging akan name depending on the gender entered as well as the day of the week
     if(radioCh=="male" && dayOfTheWeek==0){
         console.log("Your Akan name is Kwasi");
         akanName.innerHTML = "Kwasi";
