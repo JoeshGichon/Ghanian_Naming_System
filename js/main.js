@@ -3,9 +3,6 @@ let inputDay = document.getElementById("day");
 let inputYear = document.getElementById("year");
 const submitData = document.getElementById("submit");
 let akanName = document.getElementById("akanName");
-console.log(akanName);
-
-
 
 
 submitData.addEventListener("click", function(e){
