@@ -50,32 +50,46 @@ submitData.addEventListener("click", function(e){
 
     if(radioCh=="male" && dayOfTheWeek==0){
         console.log("Your Akan name is Kwasi");
+        akanName.innerHTML = "Kwasi";
     }else if(radioCh=="male" && dayOfTheWeek==1){
-        console.log("YourAkanName is Kwodwo");
+        console.log("Your Akan Name is Kwodwo");
+        akanName.innerHTML = "Kwodwo";
     }else if(radioCh=="male" && dayOfTheWeek==2){
-        console.log("YourAkanName is Kwabena");
+        console.log("Your Akan Name is Kwabena");
+        akanName.innerHTML = "Kwabena";
     }else if(radioCh=="male" && dayOfTheWeek==3){
-        console.log("YourAkanName is Kwaku");
+        console.log("Your Akan Name is Kwaku");
+        akanName.innerHTML = "Kwaku";
     }else if(radioCh=="male" && dayOfTheWeek==4){
-        console.log("YourAkanName is yaw");
+        console.log("Your Akan Name is yaw");
+        akanName.innerHTML = "yaw";
     }else if(radioCh=="male" && dayOfTheWeek==5){
-        console.log("YourAkanName is Kofi");
+        console.log("Your Akan Name is Kofi");
+        akanName.innerHTML = "Kofi";
     }else if(radioCh=="male" && dayOfTheWeek==6){
-        console.log("YourAkanName is Kwame");
+        console.log("Your Akan Name is Kwame");
+        akanName.innerHTML = "Kwame";
     }else if(radioCh=="female" && dayOfTheWeek==0){
         console.log("Your Akan name is Akwoso");
+        akanName.innerHTML = "Akwoso";
     }else if(radioCh=="female" && dayOfTheWeek==1){
-        console.log("YourAkanName is adwoa");
+        console.log("Your Akan Name is adwoa");
+        akanName.innerHTML = "adwoa";
     }else if(radioCh=="female" && dayOfTheWeek==2){
-        console.log("YourAkanName is Abenaa");
+        console.log("Your Akan Name is Abenaa");
+        akanName.innerHTML = "Abenaa";
     }else if(radioCh=="female" && dayOfTheWeek==3){
-        console.log("YourAkanName is Akua");
+        console.log("Your Akan Name is Akua");
+        akanName.innerHTML = "Akua";
     }else if(radioCh=="female" && dayOfTheWeek==4){
-        console.log("YourAkanName is yaw");
+        console.log("Your Akan Name is yaw");
+        akanName.innerHTML = "yaw";
     }else if(radioCh=="female" && dayOfTheWeek==5){
-        console.log("YourAkanName is Afua");
+        console.log("Your Akan Name is Afua");
+        akanName.innerHTML = "Afua";
     }else if(radioCh=="female" && dayOfTheWeek==6){
-        console.log("YourAkanName is Ama");
+        console.log("Your Akan Name is Ama");
+        akanName.innerHTML = "Ama";
     }else{
         // console.log("Invalid target name for name");
         akanName.innerHTML = "Invalid Name";
