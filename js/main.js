@@ -5,7 +5,7 @@ let inputDay = document.getElementById("day");
 let inputYear = document.getElementById("year");
 const submitData = document.getElementById("submit");
 let akanName = document.getElementById("akanName");
-
+let result = document.querySelector("#result");
 
 // Creating my submit event which takes a call back function
 
@@ -24,15 +24,30 @@ submitData.addEventListener("click", function(e){
     console.log(year);
 
     // Creating century(cc) variableas well as year(yy) variable that splits the Year string variable into 2 parts, cc and yy
-    var yy = year.slice(0,2);
-    var cc = year.slice(2,5);
+    var cc = year.slice(0,2);
+    var yy = year.slice(2,5);
+    console.log("yy="+yy,"cc="+cc);
     
     // validating the day as well as the month variables to ensure its correct
-    if(month<0 && month>12 && day<0 && day>31){
-        alert("Invalid month");
-    };
+    month = parseInt(month);
+    day = parseInt(day);
+    year = parseInt(year)
+    console.log(month, day,year);
+    console.log(typeof month, typeof day, typeof year);
 
+    // validating dates using momment.js
+    function validateDate(){
+        if(month<0 && month>12 || day<0 && day>30){
+            alert("Enter a valid Month");
+        }else{
+            alert("valid Date");
+        }
+    }
+    validateDate();
+    // result.innerText = moments(`${month}/${date}/${year}`,"MM/DD/YYYY", valid).isValid;
 
+    // validating date inputs
+    
 
     // var radioCh = document.getElementsByName("gender").forEach(radio =>{
     //     if (radio.checked){
