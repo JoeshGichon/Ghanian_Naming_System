@@ -42,12 +42,6 @@ li{
 #form>div:nth-child(1) input{
     display: inline-block;
 }
-#day,#month{
-    width: 4rem;
-}
-#year{
-    width: 8rem;
-}
 #sec-3{
     border: 2px solid grey;
     border-radius: 10px;
